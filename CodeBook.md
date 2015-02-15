@@ -146,6 +146,6 @@ Column | Variable Name
 Some changes were performed to clean up the data. The activity names originally had code numbers (1 to 6) attached to their names. These numbers were omitted from the names, and the names were formatted with first capital letter, underlines were also omitted. For example: the activity name "2 WALKING_UPSTAIRS" replaced with "WalkingUpstairs".
 Some minor changes were made to the variables names, omitting only the "()" from their names.
 
-The full description of the workflow to clean up the data and creating the tidy data file **Mean_ActivityDataBySmartphones.txt** by the script [run_analysis.R](https://github.com/anat-kedem/TidyDataActivityRecognitionUsingSmartphones/run_analysis.R) is described in the [README.md](https://github.com/anat-kedem/TidyDataActivityRecognitionUsingSmartphones/README.md) file.
+The full description of the workflow to clean up the data and creating the tidy data file **Mean_ActivityDataBySmartphones.txt** by the script [run_analysis.R](https://github.com/anat-kedem/TidyDataActivityRecognitionUsingSmartphones/run_analysis.R) is described in the [README.md](https://github.com/anat-kedem/TidyDataActivityRecognitionUsingSmartphones/blob/master/README.md) file.
 
 
