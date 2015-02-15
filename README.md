@@ -18,14 +18,17 @@ Files under the main folder:
 - "features.txt" 
 >Names of 561 variables
 - "activity_labels.txt"
+
 >Names of the 6 activities that were measured for each subject
 
 Files under subfolder "train":
 - "X_train.txt"
+
 >Data for train group (21 subjects), 561 columns, 7352 observations
 - "subject_train.txt"
 >The subject code for each observation (7352 rows, 1 column)
 - "y_train.txt"
+
 >The activity code for each observation (7352 rows, 1 column)
 
 Files under subfolder "test":
