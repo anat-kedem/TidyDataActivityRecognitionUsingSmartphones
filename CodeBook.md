@@ -38,16 +38,15 @@ Subject | Activity_Mean     | *variable1* | *variable2* |*(rest of variables)*
 1       |Sitting               |...          |...          |...
 1       |Standing              |...          |...          |...
 1       |Laying                |...          |...          |...
-1       |**Mean_of_Activities**|...          |...          |...
 2       |Walking               |...          |...          |...
 2       |WalkingUpstairs      |...          |...          |...
 
-Where (...) is the mean of the relevant data. For example, the value in row 1 column 3 is the mean of all measurements of activity "Walking" for *"variable1"* (see actual variable names below) for subject "1", and the value in row 7 column 3 is the mean of all measurements of all activities for *"variable1"* for subject "1".
+Where (...) is the mean of the relevant data. For example, the value in row 1 column 3 is the mean of all measurements of activity "Walking" for *"variable1"* (see actual variable names below) for subject 1.
 
-The full table includes 210 observation rows (beyond the one title row of the column names) and 86 variables. The total columns is 86 + 2 (variables + the subject code and activity name columns).
+The full table includes 180 observation rows (beyond the one title row of the column names) and 86 variables. The total columns is 86 + 2 (variables + the subject code and activity name columns).
 
 ####Rows
-The tidy data includes 210 observation rows. For each subject the tidy data includes 6 rows that contain means of six types of activity and one row contains the mean of all activities for this subject. 30 subjects multiple 7 rows = 210 rows.
+The tidy data includes 180 observation rows. For each subject the tidy data includes 6 rows that contain means of six types of activity. 30 subjects multiple 6 rows = 180 rows.
 ####Variables
 The tidy data includes 88 columns, from these 86 are variables and 2 are codes and names of the subjects and activities. From the original variables of the data (see the above link), the **mean and std variables** for the 3-axial signals in the X, Y and Z directions were used in the tidy data:
 
