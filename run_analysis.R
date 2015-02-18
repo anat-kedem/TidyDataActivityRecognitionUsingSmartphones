@@ -69,24 +69,17 @@ run_analysis <- function() {
         activityNum <- length(activityList) ##how many activities (6)
         variableNum <- ncol(smallDataset)
         meanDataset <- data.frame(
-                Subject=unlist(lapply(c("1":"30"), function(x) {rep(x, (activityNum+1))})), ##for each subject 7 rows (6 rows activities + mean of all)
-                Activities=rep(c(activityList, "Mean_of_Activities"), subjectNum)
+                Subject=unlist(lapply(c("1":"30"), function(x) {rep(x, activityNum)})), ##for each subject 6 rows of activities
+                Activities=rep(c(activityList), subjectNum)
         )
         emptyMean <- data.frame(matrix(ncol = (ncol(smallDataset)-2), nrow = nrow(meanDataset))) ##create matrix with empty (NA) columns to store all variable means
         colnames(emptyMean) <- colnames(smallDataset[3:ncol(smallDataset)]) ##names for the empty columns
         meanDataset <- cbind(meanDataset, emptyMean, deparse.level = 0) ##data frame is ready to store mean values
         
         ##2. fill data frame with of means of variables
-        for(i in 1:210) {  ##pass through each row
-                ##for(j in 3:(ncol(smallDataset))) {  ##pass through each column
+        for(i in 1:180) {  ##pass through each row
                 for(j in 3:88) {  ##pass through each column
                         meanDataset[i,j] <- with(smallDataset, mean(smallDataset[,j][subject==meanDataset[i,1] & activityName==meanDataset[i,2]], na.rm=TRUE))
-                }
-        }
-        ##3. fill data frame with means of all activities together for each subject
-        for(i in seq(7, 210, by=7)) {
-                for(j in 3:88) {  ##pass through each column
-                        meanDataset[i,j] <- with(meanDataset, mean(meanDataset[,j][Subject==meanDataset[i,1]], na.rm=TRUE))
                 }
         }
         
