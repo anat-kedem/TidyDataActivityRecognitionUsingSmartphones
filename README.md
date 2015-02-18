@@ -77,7 +77,7 @@ activity_labels.txt | activity.names
 3. Some minor editing was done for the variable names by omitting the "()".
 
 ##5. Create the tidy data set
-An independent tidy data set table was then created from the filtered data. The tidy data set contains the average of each variable for each activity and each subject.
+An independent tidy data set table was then created from the filtered data. The tidy data set contains the average of each variable for each activity for each subject.
 ###Script steps:
 1. A table was built with the proper dimensions.
 >The first column contains the subject codes, the second column contains the six activity names (for each subject). Another 86 columns are the relevant variables (mean or std). The table contains 180 rows (30 subjects x 6 activities).
