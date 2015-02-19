@@ -62,7 +62,7 @@ The tidy data includes 88 columns, from these 86 are variables and 2 are codes a
 
 **The full names of the 86 variables and domain of the tidy data are listed below:**
 
-The domain for names with "t" as in "tBodyAcc-mean-X" is time, and the domain for names with "f" as in "fBodyAcc-mean-X" is frequency. Domain described instead of units since in the original data all variables were normalized and bounded within [-1,1].
+The domain for names with "t" as in "tBodyAcc-mean-X" is time, and the domain for names with "f" as in "fBodyAcc-mean-X" is frequency. Domain described instead of units since in the source data all variables were normalized and bounded within [-1,1].
 
 Column | Variable Name 
 :----- | :------------ 
