@@ -21,7 +21,7 @@ run_analysis <- function() {
         features.names <- read.table("features.txt", colClasses = "character")
         activity.names <- read.table("activity_labels.txt", colClasses = "character")
         
-        ##set column names and build one dateset that contain both test and train data
+        ##set column names and build one dataset that contain both test and train data
         ##1. build train dataset
         colnames(train.data) <- features.names[,2] ##add the "features" as column names
         colnames(train.activity) <- "activityName" ##add a column name for the activitiy column
@@ -42,8 +42,8 @@ run_analysis <- function() {
         ##create smaller dataset that contain data for mean and std (and the subject and activity)
         ##1. filter the large dataset into smaller dataset
         colMeanStd <- grepl("[Mm]ean|std",names(largeDataset)) ##logical vector indicating which of the columns contain  one of the words: mean, Mean, or std
-        colMeanStd[1] <- TRUE ##update the first cell in the logical vector to keep also column "subjuect"
-        colMeanStd[2] <- TRUE ##update the second cell in the logical vector to keep slao column "activity"
+        colMeanStd[1] <- TRUE ##update the first cell in the logical vector to keep also column "subject"
+        colMeanStd[2] <- TRUE ##update the second cell in the logical vector to keep also column "activity"
         smallDataset <- largeDataset[,colMeanStd] ##create the filtered data set using the logical vector
         
         ##2. edit activity names to descriptive names, remove some brackets from the variable names
