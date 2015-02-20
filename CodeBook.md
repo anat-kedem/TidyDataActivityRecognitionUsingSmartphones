@@ -28,7 +28,7 @@ For each record in the dataset it is provided:
 ###Description
 The resulted data is a tidy data of one table file named "Mean_ActivityDataBySmartphones.txt". The tidy data includes the average of each variable for each activity and each subject.
 
-The following table shows the frame of the tidy data (see rows and variables description below):
+The following table shows the format of the tidy data (see rows and variables description below):
 
 Subject | Activity_Mean     | *variable1* | *variable2* |*(rest of variables)*
 ------- | :-------------------- | :-----------: | :-----------: | :----------------:
