@@ -154,7 +154,7 @@ Column | Variable Name
 [88] | "angle(Z,gravityMean)"
 
 ###Clean up the data
-The train and test data were merged into one dataset, kepping only variables that are calculations of mean or std, and averaging each of these variables for each activity and each subject.
+The train and test data were merged into one dataset, keeping only variables that are calculations of mean or std, and averaging each of these variables for each activity and each subject.
 Some additional changes were performed to clean up the data. The activity names originally had code numbers (1 to 6) relate to their names. These numbers were omitted from the names, and the names were formatted with first capital letter, underlines were also omitted. For example: the activity name "2 WALKING_UPSTAIRS" replaced with "WalkingUpstairs".
 Some minor changes were made to the variables names, omitting only the "()" from their names.
 
