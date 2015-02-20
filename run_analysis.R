@@ -76,7 +76,7 @@ run_analysis <- function() {
         colnames(emptyMean) <- colnames(smallDataset[3:ncol(smallDataset)]) ##names for the empty columns
         meanDataset <- cbind(meanDataset, emptyMean, deparse.level = 0) ##data frame is ready to store mean values
         
-        ##2. fill data frame with of means of variables
+        ##2. fill data frame with the means of the variables
         for(i in 1:180) {  ##pass through each row
                 for(j in 3:88) {  ##pass through each column
                         meanDataset[i,j] <- with(smallDataset, mean(smallDataset[,j][subject==meanDataset[i,1] & activityName==meanDataset[i,2]], na.rm=TRUE))
