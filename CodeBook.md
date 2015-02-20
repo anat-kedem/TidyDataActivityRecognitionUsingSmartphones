@@ -41,7 +41,7 @@ Subject | Activity_Mean     | *variable1* | *variable2* |*(rest of variables)*
 2       |Walking               |...          |...          |...
 2       |WalkingUpstairs      |...          |...          |...
 
-Where (...) is the mean of the relevant data. For example, the value in row 1 column 3 is the mean of all measurements of activity "Walking" for *"variable1"* (see actual variable names below) for subject 1.
+Where (...) is the mean of the relevant variable, activity and subject. For example, the value in row 1 column 3 is the mean of all measurements of activity "Walking" for *"variable1"* (see actual variable names below) for subject 1.
 
 The full table includes 180 observation rows (beyond the one title row of the column names) and 86 variables. The total columns is 86 + 2 (variables + the subject code and activity name columns).
 
@@ -154,7 +154,8 @@ Column | Variable Name
 [88] | "angle(Z,gravityMean)"
 
 ###Clean up the data
-Some changes were performed to clean up the data. The activity names originally had code numbers (1 to 6) relate to their names. These numbers were omitted from the names, and the names were formatted with first capital letter, underlines were also omitted. For example: the activity name "2 WALKING_UPSTAIRS" replaced with "WalkingUpstairs".
+The train and test data were merged into one dataset, kepping only variables that are calculations of mean or std, and averaging each of these variables for each activity and each subject.
+Some additional changes were performed to clean up the data. The activity names originally had code numbers (1 to 6) relate to their names. These numbers were omitted from the names, and the names were formatted with first capital letter, underlines were also omitted. For example: the activity name "2 WALKING_UPSTAIRS" replaced with "WalkingUpstairs".
 Some minor changes were made to the variables names, omitting only the "()" from their names.
 
 The full description of the workflow to clean up the data and creating the tidy data file **Mean_ActivityDataBySmartphones.txt** by the script [run_analysis.R](https://github.com/anat-kedem/TidyDataActivityRecognitionUsingSmartphones/blob/master/run_analysis.R) is described in the [README.md](https://github.com/anat-kedem/TidyDataActivityRecognitionUsingSmartphones/blob/master/README.md) file.
