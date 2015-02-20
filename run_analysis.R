@@ -88,5 +88,5 @@ run_analysis <- function() {
         write.table(meanDataset, file="Mean_ActivityDataBySmartphones.txt", row.names=FALSE)
 
 ##to read this file use the following:
-##backupSet <- read.table(file="Mean_ActivityDataBySmartphones.txt", colClasses=c("character", "character",rep("numeric",86)), header=TRUE)
+##MeanData <- read.table(file="Mean_ActivityDataBySmartphones.txt", colClasses=c("character", "character",rep("numeric",86)), header=TRUE)
 }
