@@ -61,7 +61,7 @@ run_analysis <- function() {
         names(smallDataset) <- sub("[(][)]", "", names(smallDataset))
         names(smallDataset)[83] <- sub("[)]", "", names(smallDataset)[83])
         
-        ##create the summary dataset: for each subject there is a mean for each activity and one mean for all activities
+        ##create the summary dataset: for each subject there is a mean for each activity 
         ##1. build data frame to store the means
         subjectList <- unique(smallDataset$subject) ##basically, 1 to 30
         subjectNum <- length(subjectList) ##how many subjects (30)
