@@ -1,4 +1,4 @@
-#Workflow for Creating the Tidy Data "Mean_ActivityDataBySmartphones.txt"
+#Script Workflow for Creating the Tidy Data "Mean_ActivityDataBySmartphones.txt"
 Following is the description of all transformation and cleaning up that were made to the original source data, to create the tidy data. To read the description of the tidy data itself as well as references to the original source data, see the [Code Book](https://github.com/anat-kedem/TidyDataActivityRecognitionUsingSmartphones/blob/master/CodeBook.md).
 
 All manipulations on the data, as described below, were executed using one R script called [run_analysis.R](https://github.com/anat-kedem/TidyDataActivityRecognitionUsingSmartphones/blob/master/run_analysis.R). The following describes how the script works.
