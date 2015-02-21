@@ -30,7 +30,7 @@ The resulted data is a tidy data of one table file named "Mean_ActivityDataBySma
 
 The following table shows the format of the tidy data (see rows and variables description below):
 
-Subject | Activity_Mean     | *variable1* | *variable2* |*(rest of variables)*
+Subject | Activities     | *variable1* | *variable2* |*(rest of variables)*
 ------- | :-------------------- | :-----------: | :-----------: | :----------------:
 1       |Walking                |...          |...          |...
 1       |WalkingUpstairs      |...          |...          |...
