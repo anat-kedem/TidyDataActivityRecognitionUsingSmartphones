@@ -23,7 +23,7 @@ For each record in the dataset it is provided:
   - An identifier of the subject who carried out the experiment.
 
 ---
-##Results Data
+##Tidy Data
 ---
 ###Description
 The resulted data is a tidy data of one table file named "Mean_ActivityDataBySmartphones.txt". The tidy data includes the average of each variable for each activity and each subject.
